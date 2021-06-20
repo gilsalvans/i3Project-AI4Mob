@@ -1,0 +1,22 @@
+Grafana's Docker image must first be pulled by using the following command:
+
+docker pull grafana/grafana
+
+Once it is saved on the server, it is time to run a Grafana container from this image. In this container, we must 
+specify what plugins must be installed. These plugins are extra funcionalities from Grafana's developers community.
+To make the dashboard accessible by the public, a configuration variable enabling the anonymous login has to be 
+pointed. Obviously, the anonymous users have only viewer privileges.
+To finish the setup of Grafana on the server, the following command is run:
+
+docker run -d  -p 3001:3000  
+--name=grafana 
+-e "GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource, grafana-worldmap-panel"
+-e "GF_AUTH_ANONYMOUS_ENABLED=true"
+ grafana/grafana
+
+
+After this, all the dashboard development and DB connection can be done through the Grafana web interface that I just set up
+by using these aforementioned commands.
+
+
+NOTE: these commands are run on the command line, while being connected to the server (via SSH). 
