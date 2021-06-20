@@ -1,10 +1,6 @@
 <div align="center">
   <center><h1>AI4Mob</h1></center>
 </div>
-
-<div align="center">
-    <img src="Diagrams/AI4mob_logo.JPG" height="200" width="500"/>
-</div>
     
 <div align="center">
   <center><h1>Supervised learning for public transport delays prediction in Salzburg: A neural network approach</h1></center>
@@ -21,3 +17,7 @@ Throughout the past years, the public transport sector has experienced significa
 
 ### Results: Web Dashboard
 Visit the sample AI4Mob dashboard web application under **http://ai4mob.researchstudio.at**
+
+### Project Poster
+![SalvansTorras_Poster-1](https://user-images.githubusercontent.com/57723380/122669125-29c89480-d1bc-11eb-94f1-cbf2a52bf6b7.png)
+
