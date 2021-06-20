@@ -1,7 +1,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
-#retrieve data
+#static data retrieval for building the model
 #the path is local, since the data is private and only a subset will be uploaded on GitLab
 data = pd.read_csv("C:/Users/Usuari/Desktop/svv_data.csv", encoding = "UTF-8", error_bad_lines=False, 
                 sep=';', low_memory=False)
@@ -10,7 +10,7 @@ data.head(10)
 #DB connection
 #xxxxxxxxxx - encoded pw (just to show the method for reproducibility)
 try:
-    con = create_engine('postgresql://postgres:xxxxxxxxx@ispacevm58.researchstudio.at:5555/ai4mob')
+    con = create_engine('postgresql://######:xxxxxxxxx@#############:####/db')
 except:
     print("Wrong DB connection!")
 
