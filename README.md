@@ -12,8 +12,8 @@
 
 * Student: **Gil Salvans Torras**
 * Course: **i3 Project**
-* Summer Semester 2021
-** Universität Salzburg
+* Summer Semester 2021 <br> 
+**Universität Salzburg**
 
 
 ### Abstract
